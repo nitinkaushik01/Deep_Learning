@@ -26,9 +26,5 @@ with tf.Session() as sess:
 	print("Mean(Sum(a), Prod(b)): ", sess.run(mean_tensors))
 	print("Sum(a) * Prod(b): ", sess.run(mul_tensors))
 
-train_writer = tbc.get_writer();
-train_writer.add_graph(sess.graph)
 
-train_writer.flush();
-tbc.close()
 
